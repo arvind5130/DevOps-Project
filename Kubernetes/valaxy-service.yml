@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: arvind5130-service
+  labels:
+    app: arvind5130-devops-project
+spec:
+  selector:
+    app: arvind5130-devops-project
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 31200

@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: arvind5130-regapp
+  name: valaxy-regapp
   labels: 
      app: regapp
 
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: regapp
-        image: arvind5130/regapp
+        image: valaxy/regapp
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
